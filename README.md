@@ -11,4 +11,4 @@ Simple example App to easy understand how to use WalletConnect v2 with SwiftUI &
 ![image](https://user-images.githubusercontent.com/103949275/221872245-02e5378c-0732-463c-8d6b-018301d37de2.png)
 
 ## Note
-Some code placed on "Core/Shared" was taken and reused from the official WalletConnect example repo: https://github.com/WalletConnect/WalletConnectSwiftV2
+Some code placed on "Core/Shared" folder was taken and reused from the official WalletConnect example repo: https://github.com/WalletConnect/WalletConnectSwiftV2
