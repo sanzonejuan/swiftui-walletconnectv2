@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23B202B929AD24E300039A40 /* JuanWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B202B829AD24E300039A40 /* JuanWalletApp.swift */; };
+		23B202BB29AD24E300039A40 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B202BA29AD24E300039A40 /* HomeView.swift */; };
+		23B202BD29AD24E400039A40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B202BC29AD24E400039A40 /* Assets.xcassets */; };
+		23B202C029AD24E400039A40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B202BF29AD24E400039A40 /* Preview Assets.xcassets */; };
+		23B202C829AD275200039A40 /* WalletConnect in Frameworks */ = {isa = PBXBuildFile; productRef = 23B202C729AD275200039A40 /* WalletConnect */; };
+		23B202CA29AD275200039A40 /* WalletConnectAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 23B202C929AD275200039A40 /* WalletConnectAuth */; };
+		23B202CC29AD275200039A40 /* WalletConnectChat in Frameworks */ = {isa = PBXBuildFile; productRef = 23B202CB29AD275200039A40 /* WalletConnectChat */; };
+		23B202CE29AD275200039A40 /* WalletConnectEcho in Frameworks */ = {isa = PBXBuildFile; productRef = 23B202CD29AD275200039A40 /* WalletConnectEcho */; };
+		23B202D029AD275200039A40 /* WalletConnectNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 23B202CF29AD275200039A40 /* WalletConnectNetworking */; };
+		23B202D229AD275200039A40 /* WalletConnectPairing in Frameworks */ = {isa = PBXBuildFile; productRef = 23B202D129AD275200039A40 /* WalletConnectPairing */; };
+		23B202D429AD275200039A40 /* WalletConnectPush in Frameworks */ = {isa = PBXBuildFile; productRef = 23B202D329AD275200039A40 /* WalletConnectPush */; };
+		23B202D629AD275200039A40 /* WalletConnectRouter in Frameworks */ = {isa = PBXBuildFile; productRef = 23B202D529AD275200039A40 /* WalletConnectRouter */; };
+		23B202D829AD275200039A40 /* WalletConnectVerify in Frameworks */ = {isa = PBXBuildFile; productRef = 23B202D729AD275200039A40 /* WalletConnectVerify */; };
+		23B202DA29AD275200039A40 /* Web3Inbox in Frameworks */ = {isa = PBXBuildFile; productRef = 23B202D929AD275200039A40 /* Web3Inbox */; };
+		23B202DC29AD275200039A40 /* Web3Wallet in Frameworks */ = {isa = PBXBuildFile; productRef = 23B202DB29AD275200039A40 /* Web3Wallet */; };
+		23B202E229AD71F600039A40 /* WalletConnectConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B202E129AD71F600039A40 /* WalletConnectConfig.swift */; };
+		23B202E429AD72B900039A40 /* WalletConnectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B202E329AD72B900039A40 /* WalletConnectManager.swift */; };
+		23B202E729ADA37900039A40 /* Web3 in Frameworks */ = {isa = PBXBuildFile; productRef = 23B202E629ADA37900039A40 /* Web3 */; };
+		23B202E929ADA37900039A40 /* Web3ContractABI in Frameworks */ = {isa = PBXBuildFile; productRef = 23B202E829ADA37900039A40 /* Web3ContractABI */; };
+		23B202EB29ADA37900039A40 /* Web3PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 23B202EA29ADA37900039A40 /* Web3PromiseKit */; };
+		23B202F229ADA46500039A40 /* DefaultSocketFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B202F029ADA46500039A40 /* DefaultSocketFactory.swift */; };
+		23B202F329ADA46500039A40 /* DefaultSignerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B202F129ADA46500039A40 /* DefaultSignerFactory.swift */; };
+		23B202F629ADA56500039A40 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 23B202F529ADA56500039A40 /* Starscream */; };
+		23B202F929ADAB4800039A40 /* SessionProposalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B202F829ADAB4800039A40 /* SessionProposalService.swift */; };
+		23B2030629ADAC2300039A40 /* SOLSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B202FC29ADAC2300039A40 /* SOLSigner.swift */; };
+		23B2030729ADAC2300039A40 /* ETHSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B202FD29ADAC2300039A40 /* ETHSigner.swift */; };
+		23B2030829ADAC2300039A40 /* Signer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B202FE29ADAC2300039A40 /* Signer.swift */; };
+		23B2030C29ADAC2300039A40 /* SessionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B2030229ADAC2300039A40 /* SessionInfo.swift */; };
+		23B2030E29ADAC2300039A40 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B2030429ADAC2300039A40 /* UIAlertController.swift */; };
+		23B2030F29ADAC2300039A40 /* EthereumTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B2030529ADAC2300039A40 /* EthereumTransaction.swift */; };
+		23B2031229ADACC100039A40 /* TweetNacl in Frameworks */ = {isa = PBXBuildFile; productRef = 23B2031129ADACC100039A40 /* TweetNacl */; };
+		23B2031529ADAD0D00039A40 /* SolanaSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 23B2031429ADAD0D00039A40 /* SolanaSwift */; };
+		23B2031829ADAED200039A40 /* UIViewController+TopMostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B2031729ADAED200039A40 /* UIViewController+TopMostViewController.swift */; };
+		23B2031A29ADB02C00039A40 /* WalletConnectCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B2031929ADB02C00039A40 /* WalletConnectCoordinator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		23B202B529AD24E300039A40 /* JuanWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuanWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B202B829AD24E300039A40 /* JuanWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuanWalletApp.swift; sourceTree = "<group>"; };
+		23B202BA29AD24E300039A40 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		23B202BC29AD24E400039A40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23B202BF29AD24E400039A40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23B202E129AD71F600039A40 /* WalletConnectConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectConfig.swift; sourceTree = "<group>"; };
+		23B202E329AD72B900039A40 /* WalletConnectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectManager.swift; sourceTree = "<group>"; };
+		23B202F029ADA46500039A40 /* DefaultSocketFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultSocketFactory.swift; sourceTree = "<group>"; };
+		23B202F129ADA46500039A40 /* DefaultSignerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultSignerFactory.swift; sourceTree = "<group>"; };
+		23B202F829ADAB4800039A40 /* SessionProposalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionProposalService.swift; sourceTree = "<group>"; };
+		23B202FC29ADAC2300039A40 /* SOLSigner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOLSigner.swift; sourceTree = "<group>"; };
+		23B202FD29ADAC2300039A40 /* ETHSigner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETHSigner.swift; sourceTree = "<group>"; };
+		23B202FE29ADAC2300039A40 /* Signer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signer.swift; sourceTree = "<group>"; };
+		23B2030229ADAC2300039A40 /* SessionInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionInfo.swift; sourceTree = "<group>"; };
+		23B2030429ADAC2300039A40 /* UIAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		23B2030529ADAC2300039A40 /* EthereumTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthereumTransaction.swift; sourceTree = "<group>"; };
+		23B2031729ADAED200039A40 /* UIViewController+TopMostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+TopMostViewController.swift"; sourceTree = "<group>"; };
+		23B2031929ADB02C00039A40 /* WalletConnectCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectCoordinator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23B202B229AD24E300039A40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B2031229ADACC100039A40 /* TweetNacl in Frameworks */,
+				23B2031529ADAD0D00039A40 /* SolanaSwift in Frameworks */,
+				23B202CA29AD275200039A40 /* WalletConnectAuth in Frameworks */,
+				23B202D229AD275200039A40 /* WalletConnectPairing in Frameworks */,
+				23B202C829AD275200039A40 /* WalletConnect in Frameworks */,
+				23B202CC29AD275200039A40 /* WalletConnectChat in Frameworks */,
+				23B202DC29AD275200039A40 /* Web3Wallet in Frameworks */,
+				23B202D429AD275200039A40 /* WalletConnectPush in Frameworks */,
+				23B202CE29AD275200039A40 /* WalletConnectEcho in Frameworks */,
+				23B202D829AD275200039A40 /* WalletConnectVerify in Frameworks */,
+				23B202F629ADA56500039A40 /* Starscream in Frameworks */,
+				23B202D029AD275200039A40 /* WalletConnectNetworking in Frameworks */,
+				23B202E729ADA37900039A40 /* Web3 in Frameworks */,
+				23B202DA29AD275200039A40 /* Web3Inbox in Frameworks */,
+				23B202D629AD275200039A40 /* WalletConnectRouter in Frameworks */,
+				23B202EB29ADA37900039A40 /* Web3PromiseKit in Frameworks */,
+				23B202E929ADA37900039A40 /* Web3ContractABI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23B202AC29AD24E300039A40 = {
+			isa = PBXGroup;
+			children = (
+				23B202B729AD24E300039A40 /* JuanWallet */,
+				23B202B629AD24E300039A40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23B202B629AD24E300039A40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23B202B529AD24E300039A40 /* JuanWallet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23B202B729AD24E300039A40 /* JuanWallet */ = {
+			isa = PBXGroup;
+			children = (
+				23B2031629ADAEC600039A40 /* Extensions */,
+				23B202EF29ADA46500039A40 /* Core */,
+				23B202B829AD24E300039A40 /* JuanWalletApp.swift */,
+				23B202BA29AD24E300039A40 /* HomeView.swift */,
+				23B202BC29AD24E400039A40 /* Assets.xcassets */,
+				23B202BE29AD24E400039A40 /* Preview Content */,
+			);
+			path = JuanWallet;
+			sourceTree = "<group>";
+		};
+		23B202BE29AD24E400039A40 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				23B202BF29AD24E400039A40 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		23B202E029AD71EB00039A40 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				23B202E129AD71F600039A40 /* WalletConnectConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		23B202EF29ADA46500039A40 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				23B202E029AD71EB00039A40 /* Config */,
+				23B202FA29ADAC2300039A40 /* Shared */,
+				23B202F829ADAB4800039A40 /* SessionProposalService.swift */,
+				23B2031929ADB02C00039A40 /* WalletConnectCoordinator.swift */,
+				23B202E329AD72B900039A40 /* WalletConnectManager.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		23B202F729ADAB0A00039A40 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				23B202F029ADA46500039A40 /* DefaultSocketFactory.swift */,
+				23B202F129ADA46500039A40 /* DefaultSignerFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		23B202FA29ADAC2300039A40 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				23B202FB29ADAC2300039A40 /* Signer */,
+				23B202F729ADAB0A00039A40 /* Factories */,
+				23B2030229ADAC2300039A40 /* SessionInfo.swift */,
+				23B2030429ADAC2300039A40 /* UIAlertController.swift */,
+				23B2030529ADAC2300039A40 /* EthereumTransaction.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		23B202FB29ADAC2300039A40 /* Signer */ = {
+			isa = PBXGroup;
+			children = (
+				23B202FC29ADAC2300039A40 /* SOLSigner.swift */,
+				23B202FD29ADAC2300039A40 /* ETHSigner.swift */,
+				23B202FE29ADAC2300039A40 /* Signer.swift */,
+			);
+			path = Signer;
+			sourceTree = "<group>";
+		};
+		23B2031629ADAEC600039A40 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				23B2031729ADAED200039A40 /* UIViewController+TopMostViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23B202B429AD24E300039A40 /* JuanWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23B202C329AD24E400039A40 /* Build configuration list for PBXNativeTarget "JuanWallet" */;
+			buildPhases = (
+				23B202B129AD24E300039A40 /* Sources */,
+				23B202B229AD24E300039A40 /* Frameworks */,
+				23B202B329AD24E300039A40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JuanWallet;
+			packageProductDependencies = (
+				23B202C729AD275200039A40 /* WalletConnect */,
+				23B202C929AD275200039A40 /* WalletConnectAuth */,
+				23B202CB29AD275200039A40 /* WalletConnectChat */,
+				23B202CD29AD275200039A40 /* WalletConnectEcho */,
+				23B202CF29AD275200039A40 /* WalletConnectNetworking */,
+				23B202D129AD275200039A40 /* WalletConnectPairing */,
+				23B202D329AD275200039A40 /* WalletConnectPush */,
+				23B202D529AD275200039A40 /* WalletConnectRouter */,
+				23B202D729AD275200039A40 /* WalletConnectVerify */,
+				23B202D929AD275200039A40 /* Web3Inbox */,
+				23B202DB29AD275200039A40 /* Web3Wallet */,
+				23B202E629ADA37900039A40 /* Web3 */,
+				23B202E829ADA37900039A40 /* Web3ContractABI */,
+				23B202EA29ADA37900039A40 /* Web3PromiseKit */,
+				23B202F529ADA56500039A40 /* Starscream */,
+				23B2031129ADACC100039A40 /* TweetNacl */,
+				23B2031429ADAD0D00039A40 /* SolanaSwift */,
+			);
+			productName = JuanWallet;
+			productReference = 23B202B529AD24E300039A40 /* JuanWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23B202AD29AD24E300039A40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					23B202B429AD24E300039A40 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 23B202B029AD24E300039A40 /* Build configuration list for PBXProject "JuanWallet" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23B202AC29AD24E300039A40;
+			packageReferences = (
+				23B202C629AD275200039A40 /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */,
+				23B202E529ADA37900039A40 /* XCRemoteSwiftPackageReference "Web3" */,
+				23B202F429ADA56400039A40 /* XCRemoteSwiftPackageReference "Starscream" */,
+				23B2031029ADACC100039A40 /* XCRemoteSwiftPackageReference "tweetnacl-swiftwrap" */,
+				23B2031329ADAD0D00039A40 /* XCRemoteSwiftPackageReference "solana-swift" */,
+			);
+			productRefGroup = 23B202B629AD24E300039A40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23B202B429AD24E300039A40 /* JuanWallet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23B202B329AD24E300039A40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B202C029AD24E400039A40 /* Preview Assets.xcassets in Resources */,
+				23B202BD29AD24E400039A40 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23B202B129AD24E300039A40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B2030F29ADAC2300039A40 /* EthereumTransaction.swift in Sources */,
+				23B2030C29ADAC2300039A40 /* SessionInfo.swift in Sources */,
+				23B2030629ADAC2300039A40 /* SOLSigner.swift in Sources */,
+				23B2030729ADAC2300039A40 /* ETHSigner.swift in Sources */,
+				23B202E429AD72B900039A40 /* WalletConnectManager.swift in Sources */,
+				23B202F229ADA46500039A40 /* DefaultSocketFactory.swift in Sources */,
+				23B202F329ADA46500039A40 /* DefaultSignerFactory.swift in Sources */,
+				23B2030829ADAC2300039A40 /* Signer.swift in Sources */,
+				23B202E229AD71F600039A40 /* WalletConnectConfig.swift in Sources */,
+				23B202BB29AD24E300039A40 /* HomeView.swift in Sources */,
+				23B2030E29ADAC2300039A40 /* UIAlertController.swift in Sources */,
+				23B2031829ADAED200039A40 /* UIViewController+TopMostViewController.swift in Sources */,
+				23B2031A29ADB02C00039A40 /* WalletConnectCoordinator.swift in Sources */,
+				23B202B929AD24E300039A40 /* JuanWalletApp.swift in Sources */,
+				23B202F929ADAB4800039A40 /* SessionProposalService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		23B202C129AD24E400039A40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23B202C229AD24E400039A40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23B202C429AD24E400039A40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JuanWallet/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = js.JuanWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		23B202C529AD24E400039A40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JuanWallet/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = js.JuanWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23B202B029AD24E300039A40 /* Build configuration list for PBXProject "JuanWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23B202C129AD24E400039A40 /* Debug */,
+				23B202C229AD24E400039A40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23B202C329AD24E400039A40 /* Build configuration list for PBXNativeTarget "JuanWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23B202C429AD24E400039A40 /* Debug */,
+				23B202C529AD24E400039A40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		23B202C629AD275200039A40 /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WalletConnect/WalletConnectSwiftV2.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.4.2;
+			};
+		};
+		23B202E529ADA37900039A40 /* XCRemoteSwiftPackageReference "Web3" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WalletConnect/Web3.swift";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.2;
+			};
+		};
+		23B202F429ADA56400039A40 /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		23B2031029ADACC100039A40 /* XCRemoteSwiftPackageReference "tweetnacl-swiftwrap" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bitmark-inc/tweetnacl-swiftwrap.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		23B2031329ADAD0D00039A40 /* XCRemoteSwiftPackageReference "solana-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/flypaper0/solana-swift";
+			requirement = {
+				branch = "feature/available-13";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		23B202C729AD275200039A40 /* WalletConnect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23B202C629AD275200039A40 /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
+			productName = WalletConnect;
+		};
+		23B202C929AD275200039A40 /* WalletConnectAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23B202C629AD275200039A40 /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
+			productName = WalletConnectAuth;
+		};
+		23B202CB29AD275200039A40 /* WalletConnectChat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23B202C629AD275200039A40 /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
+			productName = WalletConnectChat;
+		};
+		23B202CD29AD275200039A40 /* WalletConnectEcho */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23B202C629AD275200039A40 /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
+			productName = WalletConnectEcho;
+		};
+		23B202CF29AD275200039A40 /* WalletConnectNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23B202C629AD275200039A40 /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
+			productName = WalletConnectNetworking;
+		};
+		23B202D129AD275200039A40 /* WalletConnectPairing */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23B202C629AD275200039A40 /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
+			productName = WalletConnectPairing;
+		};
+		23B202D329AD275200039A40 /* WalletConnectPush */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23B202C629AD275200039A40 /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
+			productName = WalletConnectPush;
+		};
+		23B202D529AD275200039A40 /* WalletConnectRouter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23B202C629AD275200039A40 /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
+			productName = WalletConnectRouter;
+		};
+		23B202D729AD275200039A40 /* WalletConnectVerify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23B202C629AD275200039A40 /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
+			productName = WalletConnectVerify;
+		};
+		23B202D929AD275200039A40 /* Web3Inbox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23B202C629AD275200039A40 /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
+			productName = Web3Inbox;
+		};
+		23B202DB29AD275200039A40 /* Web3Wallet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23B202C629AD275200039A40 /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
+			productName = Web3Wallet;
+		};
+		23B202E629ADA37900039A40 /* Web3 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23B202E529ADA37900039A40 /* XCRemoteSwiftPackageReference "Web3" */;
+			productName = Web3;
+		};
+		23B202E829ADA37900039A40 /* Web3ContractABI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23B202E529ADA37900039A40 /* XCRemoteSwiftPackageReference "Web3" */;
+			productName = Web3ContractABI;
+		};
+		23B202EA29ADA37900039A40 /* Web3PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23B202E529ADA37900039A40 /* XCRemoteSwiftPackageReference "Web3" */;
+			productName = Web3PromiseKit;
+		};
+		23B202F529ADA56500039A40 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23B202F429ADA56400039A40 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+		23B2031129ADACC100039A40 /* TweetNacl */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23B2031029ADACC100039A40 /* XCRemoteSwiftPackageReference "tweetnacl-swiftwrap" */;
+			productName = TweetNacl;
+		};
+		23B2031429ADAD0D00039A40 /* SolanaSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23B2031329ADAD0D00039A40 /* XCRemoteSwiftPackageReference "solana-swift" */;
+			productName = SolanaSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 23B202AD29AD24E300039A40 /* Project object */;
+}
