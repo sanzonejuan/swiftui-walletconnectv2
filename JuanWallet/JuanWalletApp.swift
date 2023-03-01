@@ -20,6 +20,9 @@ struct JuanWalletApp: App {
         WindowGroup {
             HomeView()
                 .environmentObject(walletConnectManager)
+                .onOpenURL { url in
+                    walletConnectManager.handleDeeplinkURL(url)
+                }
         }
     }
 }

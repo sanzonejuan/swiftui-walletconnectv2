@@ -44,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		232DA03529AF7BAB00D7C150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		23B202B529AD24E300039A40 /* JuanWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuanWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B202B829AD24E300039A40 /* JuanWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuanWalletApp.swift; sourceTree = "<group>"; };
 		23B202BA29AD24E300039A40 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 		23B202B729AD24E300039A40 /* JuanWallet */ = {
 			isa = PBXGroup;
 			children = (
+				232DA03529AF7BAB00D7C150 /* Info.plist */,
 				23B2031629ADAEC600039A40 /* Extensions */,
 				23B202EF29ADA46500039A40 /* Core */,
 				23B202B829AD24E300039A40 /* JuanWalletApp.swift */,
@@ -430,6 +432,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JuanWallet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -462,6 +465,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JuanWallet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

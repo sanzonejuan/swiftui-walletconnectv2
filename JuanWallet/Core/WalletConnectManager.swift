@@ -23,6 +23,7 @@ final class WalletConnectManager: ObservableObject {
     private let coordinator: WalletConnectCoordinator
     private let sessionProposalService: SessionProposalService
     private var publishers = [AnyCancellable]()
+    private let deeplinkWalletConnectScheme: String = "wc:"
     
     // MARK: Init
     
@@ -43,6 +44,15 @@ final class WalletConnectManager: ObservableObject {
     }
     
     // MARK: Public Methods
+    
+    func handleDeeplinkURL(_ url: URL) {
+        let deeplinkURL = url.absoluteString
+        if deeplinkURL.contains(deeplinkWalletConnectScheme) {
+            Task {
+                try? await self.pair(stringURI: deeplinkURL)
+            }
+        }
+    }
     
     func connectUserAction() {
         coordinator.presentEnterURIAlert { uri in

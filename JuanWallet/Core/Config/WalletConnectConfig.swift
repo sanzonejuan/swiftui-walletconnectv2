@@ -10,6 +10,7 @@ import WalletConnectPairing
 
 enum WalletConnectConfig {
     
+    // Configure projectID on https://cloud.walletconnect.com/
     static let projectID = "replaceWithYourProjectID"
     
     static let metadata = AppMetadata(
