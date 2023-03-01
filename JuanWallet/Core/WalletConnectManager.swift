@@ -18,6 +18,10 @@ final class WalletConnectManager: ObservableObject {
     
     @Published var currentSessions = [Session]()
     
+    var isConnected: Bool {
+        !currentSessions.isEmpty
+    }
+    
     // MARK: Private Properties
     
     private let coordinator: WalletConnectCoordinator

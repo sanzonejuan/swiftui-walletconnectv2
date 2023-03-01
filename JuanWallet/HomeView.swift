@@ -13,12 +13,6 @@ struct HomeView: View {
     
     @EnvironmentObject var walletConnectManager: WalletConnectManager
     
-    // MARK: Private Properties
-    
-    var isConnected: Bool {
-        !walletConnectManager.currentSessions.isEmpty
-    }
-    
     // MARK: View
     
     var body: some View {
@@ -46,7 +40,7 @@ struct HomeView: View {
     
     @ViewBuilder
     private var sessionsListView: some View {
-        if isConnected {
+        if walletConnectManager.isConnected {
             List {
                 Section("Active Sessions") {
                     ForEach(walletConnectManager.currentSessions, id: \.pairingTopic) { session in
